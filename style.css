@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    flex: 0 0 95%;
+}
+
+.screen {
+    width: 100%;
+    font-size: 7rem;
+    padding: 0.5rem;
+    background: rgb(41, 41, 56);
+    color: white;
+    border: none;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5s linear;
+}
+
+button {
+    flex: 0 0 25%;
+    border: 1px solid black;  
+    padding: 0.25rem 0;
+    transition: all 0.2s ease; 
+}
+
+.symbol {
+    font-size: 4rem;
+    background-color: rgb(244, 159, 0);
+    font-weight: 400;
+    color: rgb(246, 30, 30);
+    border: 2.5px solid black;  
+}
+
+.symbol:hover {
+    background-color: black;
+    color: white;
+}
+
+.num {
+    border: 2px solid black; 
+    font-size: 4rem;
+    background-color: whitesmoke;
+    font-weight: 400;
+}
+
+.num:hover {
+    color: whitesmoke;
+    background-color: rgb(121, 118, 118);
+}
+
+#clr {
+    border: 2.5px solid black; 
+    font-size: 4rem;
+    background-color: red; 
+    color: black;
+}
+
+#clr:hover {
+    background-color: rgb(195, 8, 8);
+    color: white;
+    transition: all 0.2s;
+}
+
+#equal {
+    border: 2.5px solid black;  
+    font-size: 4rem;
+    background-color: rgb(138, 240, 138);
+    font-weight: 400;
+}
+
+#equal:hover {
+    background-color: black;
+    color: red;
+}
+
+#bkspce {
+    border: 2.5px solid black; 
+    font-size: 4rem;
+    background-color: red; 
+    color: black;
+}
+
+#bkspce:hover {
+    background-color: rgb(195, 8, 8);
+    color: white;
+    transition: all 0.2s;
+}
